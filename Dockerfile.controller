@@ -1,0 +1,6 @@
+FROM ubuntu:18.04
+RUN  apt-get update &&  apt install openssh-client git -y
+RUN mkdir -p /ko-app
+COPY bin/controller /ko-app/controller
+ENTRYPOINT ["/ko-app/controller"]
+
