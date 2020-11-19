@@ -17,6 +17,8 @@ build_image_info_9:/bin/webhook;/Dockerfile.webhook;tekton-webhook
 
 image_tag:0.15
 
+#dockerfile中binary路径
+binary_path_in_dockerfile:/bin
 
 ###############
 #docker私有仓库url
